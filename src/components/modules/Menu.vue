@@ -1,0 +1,22 @@
+<template>
+  <div class="header-menu">
+    <ul>
+      <li v-for="item in menu" :key="item.id">
+        <a :href="item.href">{{ item.title }}</a>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script setup>
+import moduleData from '../../mock-data/menu.json'
+import { onMounted, ref } from 'vue'
+
+const menu = ref([])
+
+onMounted(() => {
+  menu.value = moduleData.data
+})
+</script>
+
+<style lang="scss" scoped></style>

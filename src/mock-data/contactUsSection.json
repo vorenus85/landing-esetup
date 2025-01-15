@@ -1,0 +1,10 @@
+{
+  "data": {
+    "title": "Subscribe to get notified about update",
+    "description": "By subscribing with your mail, you will accept our privacy policy",
+    "form": {
+      "emailPlaceholder": "Enter your email",
+      "cta": "Subscribe us"
+    }
+  }
+}

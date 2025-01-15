@@ -1,0 +1,11 @@
+{
+  "data": {
+    "title": "Great software is built with <span class='secondary-color'>amazing developers<span>",
+    "description": "We help build and manage a team of world-class developers to bring your vision to life",
+    "banner": {
+      "alt": "amazing developers",
+      "image": "hero.png"
+    },
+    "cta": "Get Started"
+  }
+}

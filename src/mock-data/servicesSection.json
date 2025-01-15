@@ -1,0 +1,32 @@
+{
+  "data": {
+    "title": "Our service",
+    "subTitle": "Determine the service you need",
+    "services": [
+      {
+        "id": 1,
+        "icon": "dev",
+        "title": "Development",
+        "description": "Create a platform with the best and coolest quality from us."
+      },
+      {
+        "id": 2,
+        "icon": "uiuix",
+        "title": "UI/UX Designer",
+        "description": "We provide UI/UX Design services, and of course with the best quality"
+      },
+      {
+        "id": 3,
+        "icon": "designer",
+        "title": "Motion Graphik",
+        "description": "Create a platform with the best and coolest quality from us."
+      },
+      {
+        "id": 4,
+        "icon": "award",
+        "title": "Best Award history",
+        "description": "We have placed various awards for our performance"
+      }
+    ]
+  }
+}
