@@ -12,7 +12,15 @@
       <div class="clients-list">
         <div class="client" v-for="client in clients" :key="client.id">
           <div class="client-image-wrapper">
-            <div class="client-image">{{ client.image }}</div>
+            <div class="client-image">
+              <img
+                :alt="client?.name"
+                :src="imageUrl(client?.image, folder)"
+                loading="lazy"
+                :width="client?.width"
+                :height="client?.height"
+              />
+            </div>
           </div>
           <div class="client-name">{{ client.title }}</div>
           <div class="client-footer">
@@ -28,6 +36,9 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import moduleData from '../../mock-data/clientsSection.json'
+import { useImageUrl } from '@/composables/useImageUrl.js'
+const folder = 'clients'
+const { imageUrl } = useImageUrl()
 
 const title = ref(null)
 const description = ref(null)
