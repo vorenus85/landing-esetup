@@ -1,16 +1,16 @@
 <template>
   <div class="clients-section">
     <div class="container mx-auto" id="clients">
-      <div class="clients-module">
-        <div class="module-head">
+      <div class="clients-module text-center mx-auto">
+        <div class="module-head pb-5">
           <h2 class="module-title">{{ title }}</h2>
         </div>
         <div class="module-body">
           {{ description }}
         </div>
       </div>
-      <div class="clients-list">
-        <div class="client" v-for="client in clients" :key="client.id">
+      <div class="clients-list pt-5 flex gap-8 items-center justify-center flex-wrap">
+        <div class="client px-5 py-3" v-for="client in clients" :key="client.id">
           <div class="client-image-wrapper">
             <div class="client-image">
               <img
@@ -51,6 +51,16 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.clients-section {
+.clients-module {
+  .module-body {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .clients-module {
+    max-width: 625px;
+  }
 }
 </style>
