@@ -1,5 +1,5 @@
 <template>
-  <a href="/" class="logo">
+  <a href="/" class="logo flex items-center" :class="logoVariant">
     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="37" viewBox="0 0 27 37" fill="none">
       <g clip-path="url(#clip0_2_565)">
         <path
@@ -117,4 +117,41 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<script setup>
+import { computed } from 'vue'
+
+const props = defineProps({
+  variant: {
+    type: String,
+    default: 'dark',
+    validator: value => {
+      const available = ['light', 'dark', '']
+      return available.includes(value)
+    }
+  }
+})
+
+const logoVariant = computed(() => {
+  return 'variant-' + props.variant
+})
+</script>
+
+<style lang="scss" scoped>
+@import '@/assets/scss/_variables.scss';
+.logo {
+  gap: 10px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.variant {
+  &-light {
+    color: #fff;
+  }
+
+  &-dark {
+    color: $body-text-color;
+  }
+}
+</style>

@@ -1,4 +1,15 @@
-:root {
-  --primary-color: #5243c2;
-  --secondary-color: #ef0178;
+$primary-color: #5243c2;
+$secondary-color: #ef0178;
+$body-text-color: #1d1b1b;
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $primary-color;
+}
+
+.body-text-color {
+  color: $body-text-color;
 }
