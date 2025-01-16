@@ -18,7 +18,7 @@
 import { onMounted, ref } from 'vue'
 import moduleData from '../../mock-data/aboutUsSection.json'
 import { useImageUrl } from '@/composables/useImageUrl.js'
-const folder = 'about'
+const folder = 'about/'
 const { imageUrl } = useImageUrl()
 
 const title = ref(null)
@@ -81,8 +81,8 @@ onMounted(() => {
     display: block;
     position: absolute;
     left: 0;
-    top: 0;
-    background-image: url('/esetup/images/check.png');
+    top: 3px;
+    background-image: url('/esetup/images/check.svg');
   }
 }
 </style>

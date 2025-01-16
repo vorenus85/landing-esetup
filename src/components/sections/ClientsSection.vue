@@ -37,7 +37,7 @@
 import { onMounted, ref } from 'vue'
 import moduleData from '../../mock-data/clientsSection.json'
 import { useImageUrl } from '@/composables/useImageUrl.js'
-const folder = 'clients'
+const folder = 'clients/'
 const { imageUrl } = useImageUrl()
 
 const title = ref(null)

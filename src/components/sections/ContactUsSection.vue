@@ -1,6 +1,6 @@
 <template>
   <div class="contact-us-section">
-    <div class="container mx-auto" id="contact-us">
+    <div class="container mx-auto relative" id="contact-us">
       <div class="contact-us-module pb-10">
         <div class="module-head pb-5">
           <h2 class="module-title">{{ title }}</h2>
@@ -33,6 +33,22 @@
           </div>
         </div>
       </div>
+      <img
+        class="floating-element-1 float-animation-2 hidden lg:block"
+        loading="lazy"
+        :alt="image?.alt"
+        :src="imageUrl('contact_symbol_left.png', '')"
+        width="65"
+        height="39"
+      />
+      <img
+        class="floating-element-2 float-animation-3 hidden lg:block"
+        loading="lazy"
+        :alt="image?.alt"
+        :src="imageUrl('contact_symbol_right.png', '')"
+        width="89"
+        height="94"
+      />
     </div>
     <div class="container mx-auto pt-5 footer-menu" id="footer-menu">
       <FooterModule />
@@ -46,6 +62,9 @@ import moduleData from '@/mock-data/contactUsSection.json'
 import FooterModule from '../modules/FooterModule.vue'
 import Button from '../Button.vue'
 import { useEmailValidation } from '@/composables/useEmailValidation'
+import { useImageUrl } from '../../composables/useImageUrl.js'
+
+const { imageUrl } = useImageUrl()
 
 const { email, emailError, emailSuccess, validateEmail } = useEmailValidation()
 const title = ref(null)
@@ -65,6 +84,18 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+.floating-element-1 {
+  position: absolute;
+  left: 7%;
+  top: 75%;
+}
+
+.floating-element-2 {
+  position: absolute;
+  right: 15%;
+  top: 45%;
+}
+
 .contact-us-section {
   background: #0c111f;
   color: #fff;

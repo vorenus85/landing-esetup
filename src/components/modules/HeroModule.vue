@@ -31,7 +31,7 @@ import { onMounted, ref } from 'vue'
 import { useImageUrl } from '../../composables/useImageUrl.js'
 import moduleData from '../../mock-data/heroModule.json'
 import Button from '../Button.vue'
-const folder = 'herobanner'
+const folder = 'herobanner/'
 const { imageUrl } = useImageUrl()
 const heroTitle = ref(null)
 const description = ref(null)
