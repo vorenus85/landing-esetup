@@ -1,8 +1,10 @@
 <template>
   <div class="footer-section">
     <div class="container mx-auto">
-      <Logo />
-      <Menu />
+      <div class="footer-module flex items-center justify-between flex-col md:flex-row">
+        <Logo variant="light" class="mt-5 md:mt-0 order-2 md:order-1" />
+        <Menu class="order-1 md:order-2" />
+      </div>
     </div>
   </div>
 </template>
@@ -12,4 +14,13 @@ import Logo from '../Logo.vue'
 import Menu from './Menu.vue'
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.footer-section {
+  padding: 40px 0;
+}
+</style>
+<style>
+.menu-item {
+  color: #fff;
+}
+</style>

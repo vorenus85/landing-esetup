@@ -2,7 +2,7 @@
   <div class="header-top">
     <div class="container mx-auto flex justify-between">
       <Logo />
-      <Menu />
+      <Menu class="hidden lg:block" />
       <Button label="Contact" variant="secondary-outlined"></Button>
     </div>
   </div>

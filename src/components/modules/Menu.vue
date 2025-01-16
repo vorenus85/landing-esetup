@@ -1,8 +1,8 @@
 <template>
-  <div class="header-menu-module hidden lg:block">
-    <ul class="header-menu flex">
+  <div class="menu-module">
+    <ul class="menu flex flex-col md:flex-row">
       <li v-for="item in menu" :key="item.id">
-        <a :href="item.href" class="header-menu-item">{{ item.title }}</a>
+        <a :href="item.href" class="menu-item">{{ item.title }}</a>
       </li>
     </ul>
   </div>
@@ -21,7 +21,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 @import '@/assets/scss/_variables.scss';
-.header-menu {
+.menu {
   gap: 10px;
   font-size: 0.875rem;
   text-transform: uppercase;

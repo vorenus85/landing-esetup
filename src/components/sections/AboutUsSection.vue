@@ -2,10 +2,10 @@
   <div class="about-us-section">
     <div class="container mx-auto" id="about-us">
       <div class="about-us-module grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div class="module-image order-1 lg:order-0">
+        <div class="module-image order-2 lg:order-1">
           <img class="float-animation" :alt="image?.alt" :src="imageUrl(image?.name, folder)" />
         </div>
-        <div class="module-body order-0 lg:order-1 py-5">
+        <div class="module-body order-1 lg:order-2 py-5">
           <h2 class="module-title lg:text-start pb-5" v-html="title"></h2>
           <div class="module-description" v-html="description"></div>
         </div>
