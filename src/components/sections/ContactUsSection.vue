@@ -36,7 +36,7 @@
       <img
         class="floating-element-1 float-animation-2 hidden lg:block"
         loading="lazy"
-        :alt="image?.alt"
+        alt="floating symbol"
         :src="imageUrl('contact_symbol_left.png', '')"
         width="65"
         height="39"
@@ -44,7 +44,7 @@
       <img
         class="floating-element-2 float-animation-3 hidden lg:block"
         loading="lazy"
-        :alt="image?.alt"
+        alt="floating symbol"
         :src="imageUrl('contact_symbol_right.png', '')"
         width="89"
         height="94"
