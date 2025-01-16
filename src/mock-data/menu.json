@@ -2,7 +2,7 @@
   "data": [
     { "id": 1, "title": "Home", "href": "/" },
     { "id": 2, "title": "About", "href": "#about" },
-    { "id": 3, "title": "Service", "href": "#service" },
+    { "id": 3, "title": "Service", "href": "#services" },
     { "id": 4, "title": "Price", "href": "#price" },
     { "id": 5, "title": "Testimonial", "href": "#testimonial" }
   ]

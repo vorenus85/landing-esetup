@@ -5,3 +5,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  transition: all 0.2s;
+}
+
+.module-title {
+  font-size: 1rem;
+}
