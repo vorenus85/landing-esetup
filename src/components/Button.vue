@@ -25,13 +25,15 @@ const btnVariant = computed(() => {
 <style lang="scss" scoped>
 @import '@/assets/scss/_variables.scss';
 .btn {
+  --btn-min-width: 150px;
+  --btn-height: 50px;
   font-size: 1rem;
-  min-width: 150px;
-  line-height: 50px;
+  min-width: var(--btn-min-width);
+  line-height: var(--btn-height);
   text-align: center;
-  height: 50px;
-  text-transform: uppercase;
+  height: var(--btn-height);
   border-radius: 5px;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.2s;
 
