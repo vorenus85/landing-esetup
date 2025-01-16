@@ -1,5 +1,5 @@
 <template>
-  <div class="btn" :class="btnVariant">{{ label }}</div>
+  <button class="btn" :type="type" :class="btnVariant">{{ label }}</button>
 </template>
 
 <script setup>
@@ -7,6 +7,14 @@ import { computed } from 'vue'
 
 const props = defineProps({
   label: String,
+  type: {
+    type: String,
+    default: 'button',
+    validator: value => {
+      const available = ['button', 'submit']
+      return available.includes(value)
+    }
+  },
   variant: {
     type: String,
     default: 'secondary',

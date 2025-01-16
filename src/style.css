@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import './assets/css/reset.css';
 @import './assets/scss/_variables.scss';
-/*@import './assets/scss/_fonts.scss';*/
+@import './assets/scss/_form.scss';
 @import './assets/scss/_theme.scss';
 @tailwind base;
 @tailwind components;
@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-weight: 400;
 }
 
 a {

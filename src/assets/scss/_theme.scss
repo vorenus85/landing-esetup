@@ -12,6 +12,14 @@
   animation: float 6s ease-in-out infinite;
 }
 
+.float-animation-2 {
+  animation: float 4s ease-in-out infinite;
+}
+
+.float-animation-3 {
+  animation: float 7s ease-in-out infinite;
+}
+
 @keyframes float {
   0% {
     transform: translatey(0);
