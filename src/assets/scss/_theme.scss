@@ -1,0 +1,27 @@
+@import '@/assets/scss/_variables.scss';
+
+.module-title {
+  font-size: 1.15rem;
+  line-height: 40px;
+  font-weight: 700;
+  color: $secondary-color;
+  text-align: center;
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  to {
+    transform: translatey(0);
+  }
+}

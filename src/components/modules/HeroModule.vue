@@ -14,7 +14,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-image float-animate">
+      <div class="hero-image float-animation">
         <img :alt="banner.alt" :src="imageUrl(banner.image, folder)" fetchpriority="high" />
       </div>
     </div>

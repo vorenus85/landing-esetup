@@ -1,8 +1,8 @@
 <template>
   <div class="about-section">
     <div class="container mx-auto" id="about">
-      <div class="about-module">
-        <div class="module-image">
+      <div class="about-module grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="module-image float-animation">
           <img :alt="image?.alt" :src="imageUrl(image?.name, folder)" />
         </div>
         <div class="module-body">
@@ -16,7 +16,7 @@
 
 <script setup>
 import { onMounted, ref } from 'vue'
-import moduleData from '../../mock-data/aboutSection.json'
+import moduleData from '../../mock-data/aboutUsSection.json'
 import { useImageUrl } from '@/composables/useImageUrl.js'
 const folder = 'about'
 const { imageUrl } = useImageUrl()
