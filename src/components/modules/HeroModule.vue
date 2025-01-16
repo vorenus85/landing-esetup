@@ -7,7 +7,9 @@
         </div>
         <div class="hero-description">
           <div class="hero-description-text" v-html="description"></div>
-          <a href="#price" class="btn btn-primary">{{ cta }}</a>
+          <div class="hero-btn flex">
+            <Button :label="cta" variant="primary"></Button>
+          </div>
         </div>
       </div>
       <div class="hero-image">
@@ -21,6 +23,7 @@
 import { onMounted, ref } from 'vue'
 import { useImageUrl } from '../../composables/useImageUrl.js'
 import moduleData from '../../mock-data/heroModule.json'
+import Button from '../Button.vue'
 const folder = 'herobanner'
 const { imageUrl } = useImageUrl()
 const heroTitle = ref(null)

@@ -3,7 +3,7 @@
     <div class="container mx-auto flex justify-between">
       <Logo />
       <Menu />
-      <Button title="Contact"></Button>
+      <Button label="Contact" variant="secondary-outlined"></Button>
     </div>
   </div>
 </template>
