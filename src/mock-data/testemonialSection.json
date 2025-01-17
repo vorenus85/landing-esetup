@@ -1,6 +1,22 @@
 {
   "data": {
     "title": "Testimonials Eset Up Customers",
-    "subTitle": "What our customers have to say about our service, check below!"
+    "subTitle": "What our customers have to say about our service, check below!",
+    "reviews": [
+      {
+        "id": 1,
+        "rating": 4,
+        "name": "Jhone Lown",
+        "image": "lown.png",
+        "content": "“after 1 month I consistently do sports in sprints, finally you lose about 20 kg in weight”"
+      },
+      {
+        "id": 1,
+        "rating": 3,
+        "name": "Jhone Lown",
+        "image": "lown.png",
+        "content": "“after 1 month I consistently do sports in sprints, finally you lose about 20 kg in weight”"
+      }
+    ]
   }
 }

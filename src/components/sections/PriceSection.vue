@@ -112,7 +112,7 @@ onMounted(() => {
         position: absolute;
         left: 0;
         top: 3px;
-        background-image: url('/esetup/images/check_light.svg');
+        background-image: url('/landing-esetup/images/check_light.svg');
       }
     }
   }
@@ -130,7 +130,7 @@ onMounted(() => {
 
   &-item-2 {
     padding: 30px;
-    background: $primary-color url('/esetup/images/popular_bg.png') no-repeat right center;
+    background: $primary-color url('/landing-esetup/images/popular_bg.png') no-repeat right center;
     color: #fff;
     filter: drop-shadow(0px 42px 34px #5243c24b);
 
@@ -141,7 +141,7 @@ onMounted(() => {
 
     .package-advantage-item {
       &:before {
-        background-image: url('/esetup/images/check_light_op.svg');
+        background-image: url('/landing-esetup/images/check_light_op.svg');
       }
     }
   }

@@ -6,7 +6,7 @@
           <h2 class="module-title pb-5 text-center md:text-left">{{ title }}</h2>
         </div>
         <div class="module-body flex items-center justify-center md:justify-end">
-          <Button :label="cta" @click="getStarted"></Button>
+          <Button :label="cta" @click="hire"></Button>
         </div>
         <img
           class="floating-element-2 float-animation-2 hidden lg:block absolute"
@@ -48,8 +48,8 @@ const { imageUrl } = useImageUrl()
 const title = ref(null)
 const cta = ref(null)
 
-const getStarted = () => {
-  document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' })
+const hire = () => {
+  document.getElementById('price').scrollIntoView({ behavior: 'smooth' })
 }
 
 onMounted(() => {
