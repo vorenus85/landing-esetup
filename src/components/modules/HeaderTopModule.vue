@@ -3,7 +3,7 @@
     <div class="container mx-auto flex justify-between">
       <Logo />
       <Menu class="hidden lg:block" />
-      <Button label="Contact" variant="secondary-outlined"></Button>
+      <Button label="Contact" variant="secondary-outlined" @click="contact"></Button>
     </div>
   </div>
 </template>
@@ -12,9 +12,8 @@
 import Button from '../Button.vue'
 import Menu from './Menu.vue'
 import Logo from '../Logo.vue'
-</script>
 
-<style lang="scss" scoped>
-.header-top {
+const contact = () => {
+  document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' })
 }
-</style>
+</script>

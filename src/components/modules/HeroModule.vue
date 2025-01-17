@@ -10,7 +10,7 @@
         <div class="hero-description px-5 md:px-0">
           <div class="hero-description-text pb-5" v-html="description"></div>
           <div class="hero-btn-container flex justify-center md:justify-start">
-            <Button :label="cta" variant="primary"></Button>
+            <Button :label="cta" variant="primary" @click="getStarted"></Button>
           </div>
         </div>
       </div>
@@ -37,6 +37,10 @@ const heroTitle = ref(null)
 const description = ref(null)
 const cta = ref(null)
 const banner = ref({ alt: '', image: '' })
+
+const getStarted = () => {
+  document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' })
+}
 
 onMounted(() => {
   heroTitle.value = moduleData.data.title
