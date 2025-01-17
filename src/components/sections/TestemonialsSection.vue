@@ -6,7 +6,9 @@
           <h2 class="module-title pb-5">{{ title }}</h2>
           <h3 class="module-subtitle text-center pb-10">{{ subTitle }}</h3>
         </div>
-        <div class="module-body"></div>
+        <div class="module-body">
+          https://stackblitz.com/edit/vue3-carousel-example-vertical-m7mm8fti?file=src%2FApp.vue
+        </div>
       </div>
     </div>
   </div>

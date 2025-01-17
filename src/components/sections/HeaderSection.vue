@@ -12,6 +12,6 @@ import HeroModule from '../modules/HeroModule.vue'
 
 <style lang="scss" scoped>
 .header-section {
-  padding: 55px 0;
+  padding: 35px 0;
 }
 </style>
