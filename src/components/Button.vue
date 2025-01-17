@@ -57,6 +57,9 @@ const btnVariant = computed(() => {
   &-secondary {
     color: #fff;
     background: $secondary-color;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &-secondary-outlined {
@@ -73,6 +76,10 @@ const btnVariant = computed(() => {
   &-primary {
     color: #fff;
     background: $primary-color;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &-primary-outlined {

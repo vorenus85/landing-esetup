@@ -1,5 +1,5 @@
 <template>
-  <div class="services-section pb-10">
+  <div class="services-section pb-10 mb-5">
     <div class="container mx-auto" id="services">
       <div class="services-module">
         <div class="module-head">
