@@ -1,6 +1,47 @@
 {
   "data": {
     "title": "Our Price",
-    "subTitle": "Choose the price that suits your needs, we will always give the best for you"
+    "subTitle": "Choose the price that suits your needs, we will always give the best for you",
+    "packages": [
+      {
+        "id": 1,
+        "name": "Base",
+        "price": "$50",
+        "description": "For most businesses that want to otpimize web queries",
+        "advantages": [
+          { "id": 1, "label": "All limited links" },
+          { "id": 2, "label": "Own analytics platform" },
+          { "id": 3, "label": "Chat support" },
+          { "id": 4, "label": "Optimize hashtags" },
+          { "id": 5, "label": "Unlimited users" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Pro",
+        "price": "$100",
+        "description": "For most businesses that want to otpimize web queries",
+        "advantages": [
+          { "id": 1, "label": "All limited links" },
+          { "id": 2, "label": "Own analytics" },
+          { "id": 3, "label": "Chat support" },
+          { "id": 4, "label": "Optimize hashtags" },
+          { "id": 5, "label": "Unlimited users" }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Enterprise",
+        "price": "$200",
+        "description": "For most businesses that want to otpimize web queries",
+        "advantages": [
+          { "id": 1, "label": "All limited links" },
+          { "id": 2, "label": "Own analytics platform" },
+          { "id": 3, "label": "Chat support" },
+          { "id": 4, "label": "Optimize hashtags" },
+          { "id": 5, "label": "Unlimited users" }
+        ]
+      }
+    ]
   }
 }
