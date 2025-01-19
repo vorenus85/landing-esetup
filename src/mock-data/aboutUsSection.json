@@ -4,7 +4,9 @@
     "description": "<p>Create custom landing pages with Shades that convert more visitors than any website, no coding required.</p><br/><ul><li>Unlimited design possibility</li> <li>Completely responsive features</li> <li>Easy to customize plugins</li></ul>",
     "image": {
       "alt": "boost agencies",
-      "name": "boost.webp"
+      "name": "boost.webp",
+      "width": 633,
+      "height": 708
     }
   }
 }

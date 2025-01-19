@@ -20,6 +20,8 @@
           :alt="banner.alt"
           :src="imageUrl(banner.image, folder)"
           fetchpriority="high"
+          :width="banner.width"
+          :height="banner.height"
         />
       </div>
     </div>

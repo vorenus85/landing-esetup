@@ -4,7 +4,9 @@
     "description": "We help build and manage a team of world-class developers to bring your vision to life",
     "banner": {
       "alt": "amazing developers",
-      "image": "hero.webp"
+      "image": "hero.webp",
+      "width": 696,
+      "height": 660
     },
     "cta": "Get Started"
   }
