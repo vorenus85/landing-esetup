@@ -17,7 +17,7 @@
           <div class="service-icon-wrapper flex items-center justify-center">
             <div class="service-icon flex justify-center pb-5">
               <img
-                :alt="service.alt"
+                :alt="service.title"
                 :src="imageUrl(service.icon, folder)"
                 loading="lazy"
                 :width="110"

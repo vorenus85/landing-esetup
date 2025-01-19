@@ -1,5 +1,5 @@
 <template>
-  <a href="/" class="logo flex items-center" :class="logoVariant">
+  <a class="logo flex items-center" :class="logoVariant" title="Home" :href="baseUrl">
     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="37" viewBox="0 0 27 37" fill="none">
       <g clip-path="url(#clip0_2_565)">
         <path
@@ -119,6 +119,8 @@
 
 <script setup>
 import { computed } from 'vue'
+
+const baseUrl = import.meta.env.VITE_BASE_URL
 
 const props = defineProps({
   variant: {
